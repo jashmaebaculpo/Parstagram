@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagramWriting" translatesAutoresizingMaskIntoConstraints="NO" id="8bj-yK-6I8">
                                 <rect key="frame" x="36" y="197" width="343" height="208"/>
@@ -98,6 +98,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="873"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="351" id="ref-Sj-bif" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="351"/>
@@ -119,7 +120,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wow, I love photos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPr-w1-bBw">
-                                                    <rect key="frame" x="47" y="321" width="320" height="20.5"/>
+                                                    <rect key="frame" x="47" y="321" width="359" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -127,16 +128,19 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="pPr-w1-bBw" firstAttribute="leading" secondItem="lVC-Hq-mYt" secondAttribute="trailing" constant="8" id="10p-6p-RSb"/>
-                                                <constraint firstAttribute="trailing" secondItem="VRu-ob-hkf" secondAttribute="trailing" constant="8" id="1Sy-e8-OA5"/>
                                                 <constraint firstItem="lVC-Hq-mYt" firstAttribute="leading" secondItem="Npe-3c-h1W" secondAttribute="leading" constant="8" id="6of-p5-63W"/>
                                                 <constraint firstItem="pPr-w1-bBw" firstAttribute="top" secondItem="VRu-ob-hkf" secondAttribute="bottom" constant="8" id="7Ku-Ar-uaa"/>
+                                                <constraint firstItem="lVC-Hq-mYt" firstAttribute="baseline" secondItem="pPr-w1-bBw" secondAttribute="baseline" id="8Ka-UZ-Oav"/>
                                                 <constraint firstItem="VRu-ob-hkf" firstAttribute="top" secondItem="Npe-3c-h1W" secondAttribute="top" constant="8" id="CKB-sM-5Ez"/>
                                                 <constraint firstItem="lVC-Hq-mYt" firstAttribute="top" secondItem="VRu-ob-hkf" secondAttribute="bottom" constant="8" id="Hxr-mB-gcn"/>
                                                 <constraint firstItem="VRu-ob-hkf" firstAttribute="leading" secondItem="Npe-3c-h1W" secondAttribute="leading" constant="8" id="LWB-30-Z3g"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lVC-Hq-mYt" secondAttribute="bottom" constant="-2" id="Qbg-ik-YW0"/>
                                                 <constraint firstAttribute="trailing" secondItem="pPr-w1-bBw" secondAttribute="trailing" constant="8" id="Ufp-5i-z3e"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pPr-w1-bBw" secondAttribute="bottom" constant="8" id="bcU-Mn-7Ig"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VRu-ob-hkf" secondAttribute="trailing" constant="27" id="gFR-JZ-BnR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="captionLabel" destination="pPr-w1-bBw" id="ro7-79-d6m"/>
                                             <outlet property="photoView" destination="VRu-ob-hkf" id="Vzz-4x-3c0"/>
