@@ -216,7 +216,6 @@
 		7004581171B47060A79C450414CD9A97 /* PFConfigController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BF76D3A5C89E947295675C4AB15297 /* PFConfigController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF57AA18A2C25E1B562B38D913B1FC /* ParameterEncoding.swift */; };
 		70D213708E4F393A8EC55CE80936DBD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C277E50D72655776F423175DFA6C01 /* QuartzCore.framework */; };
-		72043DDE222D9D1200EFE89F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72043DDD222D9D1200EFE89F /* PostCell.swift */; };
 		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB655669B1B0D69D0E9A583CC0C5A724 /* NetworkReachabilityManager.swift */; };
 		74EC88A897840B49F70EB5CDC46FA30C /* BFTask+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D93AB514157FF39DDB49AB9A9DB278 /* BFTask+Private.m */; };
 		7508AE418FF3415BD32DE73A49BCE228 /* PFCommandCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDAD8ADEC4E00289E8B9E50F5545D25 /* PFCommandCache.m */; };
@@ -726,7 +725,6 @@
 		71E1E12A0A244D59D8919945D8717B5C /* PFMulticastDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFMulticastDelegate.h; path = Parse/Parse/Internal/PFMulticastDelegate.h; sourceTree = "<group>"; };
 		71E7763F916012F369E56C9AF9EA9288 /* PFOfflineObjectController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFOfflineObjectController.h; path = Parse/Parse/Internal/Object/Controller/OfflineController/PFOfflineObjectController.h; sourceTree = "<group>"; };
 		71EFB0037E3F59550A5E0F92B5202D81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72043DDD222D9D1200EFE89F /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = ../Parstagram/PostCell.swift; sourceTree = "<group>"; };
 		722FBD4D9C6F0DCEFCA9594F878ECC94 /* PFURLSessionUploadTaskDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFURLSessionUploadTaskDelegate.m; path = Parse/Parse/Internal/Commands/CommandRunner/URLSession/Session/TaskDelegate/PFURLSessionUploadTaskDelegate.m; sourceTree = "<group>"; };
 		723E245B53698E2BB2C73A0FB9A99B79 /* PFCachedQueryController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFCachedQueryController.m; path = Parse/Parse/Internal/Query/Controller/PFCachedQueryController.m; sourceTree = "<group>"; };
 		725F50548946653DD54D9AF975C990B4 /* PFObject+Synchronous.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFObject+Synchronous.h"; path = "Parse/Parse/PFObject+Synchronous.h"; sourceTree = "<group>"; };
@@ -1660,7 +1658,6 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				72043DDD222D9D1200EFE89F /* PostCell.swift */,
 				24390EFD555DD124430DFF9724065945 /* Podfile */,
 				F6E3F73BC182BC18D58A77B53E6DCB6A /* Frameworks */,
 				30DBCAA3A448CFD44E798B38E58874AA /* Pods */,
@@ -2517,7 +2514,6 @@
 				059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */,
 				6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */,
 				EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */,
-				72043DDE222D9D1200EFE89F /* PostCell.swift in Sources */,
 				8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */,
 				A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */,
 				D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */,

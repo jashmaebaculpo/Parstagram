@@ -32,6 +32,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let url = URL(string: urlString)!
         
         cell.photoView.af_setImage(withURL: url)
+        //cell.photoView.af_setImage(withURL: url)
+        
+        
         
         return cell
     }
@@ -47,9 +50,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             if posts != nil{
                 self.posts = posts!
                 self.tableView.reloadData()
-            }
-            else{
-                
             }
         }
     }
