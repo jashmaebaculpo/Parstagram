@@ -12,6 +12,7 @@
 		72043DDA222D20F400EFE89F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72043DD9222D20F400EFE89F /* LoginViewController.swift */; };
 		72043DDC222D2C3C00EFE89F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72043DDB222D2C3C00EFE89F /* CameraViewController.swift */; };
 		72A0DA07222DC1D2004C194C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0DA06222DC1D2004C194C /* PostCell.swift */; };
+		72ADA0C322364537000F7A61 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ADA0C222364537000F7A61 /* CommentCell.swift */; };
 		72C8D71F222D092F0073623A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C8D71E222D092F0073623A /* AppDelegate.swift */; };
 		72C8D724222D092F0073623A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C8D722222D092F0073623A /* Main.storyboard */; };
 		72C8D726222D09310073623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C8D725222D09310073623A /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		72043DD9222D20F400EFE89F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "/Users/jashmaebaculpo/Desktop/iOS work/Parstagram/Parstagram/Parstagram/LoginViewController.swift"; sourceTree = "<absolute>"; };
 		72043DDB222D2C3C00EFE89F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		72A0DA06222DC1D2004C194C /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		72ADA0C222364537000F7A61 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		72C8D71B222D092F0073623A /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C8D71E222D092F0073623A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C8D723222D092F0073623A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				72043DD9222D20F400EFE89F /* LoginViewController.swift */,
 				72C8D71E222D092F0073623A /* AppDelegate.swift */,
 				72C8D722222D092F0073623A /* Main.storyboard */,
+				72ADA0C222364537000F7A61 /* CommentCell.swift */,
 				72A0DA06222DC1D2004C194C /* PostCell.swift */,
 				72043DDB222D2C3C00EFE89F /* CameraViewController.swift */,
 				72043DD7222D20F000EFE89F /* FeedViewController.swift */,
@@ -383,6 +386,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -392,6 +396,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +416,7 @@
 				72043DD8222D20F000EFE89F /* FeedViewController.swift in Sources */,
 				72C8D71F222D092F0073623A /* AppDelegate.swift in Sources */,
 				72A0DA07222DC1D2004C194C /* PostCell.swift in Sources */,
+				72ADA0C322364537000F7A61 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
