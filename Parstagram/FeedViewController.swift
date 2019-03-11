@@ -15,6 +15,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var posts = [PFObject]()
     let commentbar = MessageInputBar()
     var showsCommentBar = false
+    var selectedPost: PFObject!
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -124,7 +125,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let post = posts[indexPath.row]
+        let post = posts[indexPath.section]
         
         let comments = (post["comments"] as? [PFObject]) ?? []
         
@@ -132,32 +133,32 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             showsCommentBar = true
             becomeFirstResponder()
             commentbar.inputTextView.becomeFirstResponder()
+            selectedPost = post
         }
-        
-        
-        
-//        comment["text"] = "This is a random comment"
-//        comment["post"] = post
-//        comment["author"] = PFUser.current()!
-//
-//        post.add(comment, forKey: "comments")
-//
-//        post.saveInBackground { (success, error) in
-//            if success{
-//                print("Comment saved")
-//            }
-//            else{
-//                print("Error saving comment")
-//            }
-//        }
     }
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         //create the comment
+        let comment = PFObject(className: "Comments")
+        comment["text"] = text
+        comment["post"] = selectedPost
+        comment["author"] = PFUser.current()!
+        
+        selectedPost.add(comment, forKey: "comments")
+        
+        selectedPost.saveInBackground { (success, error) in
+            if success{
+                print("Comment saved")
+            }
+            else{
+                print("Error saving comment")
+            }
+        }
+        
+        tableView.reloadData()
         
         //clear and dismiss the input bar
         commentbar.inputTextView.text = nil
-        
         showsCommentBar = false
         becomeFirstResponder()
         commentbar.inputTextView.resignFirstResponder()
